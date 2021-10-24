@@ -41,5 +41,8 @@ module.exports ={
                 'basic-syntax/'
             ]
         }
+    },
+    configureWebpack: (config) =>{
+        config.output.publicPath = 'docs'
     }
 }
