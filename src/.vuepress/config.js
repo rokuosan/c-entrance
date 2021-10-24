@@ -10,17 +10,25 @@ module.exports ={
     ],
     themeConfig: {
         nav: [
-            { text: 'Home', link: '/' },
+            { text: 'ホーム', link: '/' },
+            { text: '環境構築', link: '/development_Environment/'},
             { text: 'Tutorial', link: '/tutorial/' },
         ],
         sidebarDepth: 2,
         sidebar: {
+            '/environment/': [
+                '',
+                'compiler',
+                'editor-atom',
+                'editor-vscode'
+            ],
             '/tutorial/': [
                 '',
                 'HelloWorld'
             ],
             '/': [
                 '',
+                'environment/',
                 'tutorial/'
             ]
         }

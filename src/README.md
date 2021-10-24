@@ -1,107 +1,39 @@
-# ざっくりわかるC言語
+# ざっくりわかるC言語入門
 
-## aaa
+## これはなに？
 
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
-あわどぁだｗ</br>
+このドキュメントはC言語の基本を学んでみたいという人に向けたものです。</br>
 
+タイトルにもあるように「ざっくり」わかる事が目標です。</br>
 
-## awDAWdaw
+したがって、C言語やコンピュータの細かい事までは触れません。</br>
 
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
-dwadawd awda</br>
+ドキュメントの対象はプログラムを書いたことがない方や最近プログラミングをはじめた方です。</br>
 
-## awdadwa
+ただし、フォルダとファイルの違い、パスの知識などある程度コンピュータの操作ができることが前提です。</br>
 
-awdawaw</br>
-dwa</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
-awdawaw</br>
+筆者は特別「C言語ができる人」ではないので一部間違った内容が含まれているかもしれません。</br>
+
+可能な限り正しい情報を発信しますが、事実と異なる箇所があれば優しくご指摘お願いします。</br>
+
+## 注意事項
+
+前述した通り、このドキュメントには不正確な記述がある場合があります。</br>
+
+したがって、このドキュメントを利用するにあたって必ず他の文献と比較してください。</br>
+
+また、このドキュメントを利用して発生したいかなる損害も筆者は責任を負いません。</br>
+
+## 実行環境
+
+筆者の開発環境は以下の通りです。実行時間などの参考までにどうぞ。
+
+- OS
+  - Windows10 Home 64bit(21H1)
+- コンパイラ
+  - Mingw-w64 (9.2.0)
+- エディタ
+  - Visual Studio Code
+- PC
+  - CPU : Core i5 8400
+  - RAM : 16GB
