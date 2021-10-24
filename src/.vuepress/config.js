@@ -2,7 +2,7 @@ module.exports ={
     title: 'ざっくりわかるC言語入門',
     description: 'C言語の基本',
     dest: 'docs',
-    base: '/clang-entrance/',
+    base: '/c-entrance-doc/',
     publicPath: './',
     head: [
         ['meta', { name: 'theme-color', content: '#3eaf7c' }],
