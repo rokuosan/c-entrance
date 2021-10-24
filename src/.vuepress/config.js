@@ -11,8 +11,9 @@ module.exports ={
     themeConfig: {
         nav: [
             { text: 'ホーム', link: '/' },
-            { text: '環境構築', link: '/development_Environment/'},
-            { text: 'Tutorial', link: '/tutorial/' },
+            { text: '環境構築', link: '/environment/'},
+            { text: 'チュートリアル', link: '/tutorial/' },
+            { text: '基本構文', link: '/basic-syntax/'},
         ],
         sidebarDepth: 2,
         sidebar: {
@@ -24,7 +25,14 @@ module.exports ={
             ],
             '/tutorial/': [
                 '',
-                'HelloWorld'
+            ],
+            '/basic-syntax/':[
+                '',
+                'if',
+                'for',
+                'while',
+                'switch',
+                'variable'
             ],
             '/': [
                 '',

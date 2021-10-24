@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>if 文 | ざっくりわかるC言語入門</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="C言語の基本">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/clang-entrance/assets/css/0.styles.cf94ea86.css" as="style"><link rel="preload" href="/clang-entrance/assets/js/app.4bc36ba4.js" as="script"><link rel="preload" href="/clang-entrance/assets/js/2.a0be3db0.js" as="script"><link rel="preload" href="/clang-entrance/assets/js/11.b5e49212.js" as="script"><link rel="prefetch" href="/clang-entrance/assets/js/10.377a8482.js"><link rel="prefetch" href="/clang-entrance/assets/js/12.727a7784.js"><link rel="prefetch" href="/clang-entrance/assets/js/13.a6447fe0.js"><link rel="prefetch" href="/clang-entrance/assets/js/14.835ce5fe.js"><link rel="prefetch" href="/clang-entrance/assets/js/15.c9a87676.js"><link rel="prefetch" href="/clang-entrance/assets/js/16.c4239679.js"><link rel="prefetch" href="/clang-entrance/assets/js/17.44e5b63a.js"><link rel="prefetch" href="/clang-entrance/assets/js/18.0c0e957d.js"><link rel="prefetch" href="/clang-entrance/assets/js/3.481adbd4.js"><link rel="prefetch" href="/clang-entrance/assets/js/4.ebdd6a6d.js"><link rel="prefetch" href="/clang-entrance/assets/js/5.3e7b0f9f.js"><link rel="prefetch" href="/clang-entrance/assets/js/6.76d53a1e.js"><link rel="prefetch" href="/clang-entrance/assets/js/7.8be2e03f.js"><link rel="prefetch" href="/clang-entrance/assets/js/8.79e7977f.js"><link rel="prefetch" href="/clang-entrance/assets/js/9.19f65add.js">
+    <link rel="stylesheet" href="/clang-entrance/assets/css/0.styles.cf94ea86.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/clang-entrance/" class="home-link router-link-active"><!----> <span class="site-name">ざっくりわかるC言語入門</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/clang-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/clang-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><a href="/clang-entrance/tutorial/" class="nav-link">
+  チュートリアル
+</a></div><div class="nav-item"><a href="/clang-entrance/basic-syntax/" class="nav-link router-link-active">
+  基本構文
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/clang-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/clang-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><a href="/clang-entrance/tutorial/" class="nav-link">
+  チュートリアル
+</a></div><div class="nav-item"><a href="/clang-entrance/basic-syntax/" class="nav-link router-link-active">
+  基本構文
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/clang-entrance/basic-syntax/" aria-current="page" class="sidebar-link">基本的な文法</a></li><li><a href="/clang-entrance/basic-syntax/if.html" aria-current="page" class="active sidebar-link">if 文</a></li><li><a href="/clang-entrance/basic-syntax/for.html" class="sidebar-link">for 文</a></li><li><a href="/clang-entrance/basic-syntax/while.html" class="sidebar-link">while 文</a></li><li><a href="/clang-entrance/basic-syntax/switch.html" class="sidebar-link">switch 文</a></li><li><a href="/clang-entrance/basic-syntax/variable.html" class="sidebar-link">変数</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="if-文"><a href="#if-文" class="header-anchor">#</a> if 文</h1></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/clang-entrance/basic-syntax/" class="prev router-link-active">
+        基本的な文法
+      </a></span> <span class="next"><a href="/clang-entrance/basic-syntax/for.html">
+        for 文
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/clang-entrance/assets/js/app.4bc36ba4.js" defer></script><script src="/clang-entrance/assets/js/2.a0be3db0.js" defer></script><script src="/clang-entrance/assets/js/11.b5e49212.js" defer></script>
+  </body>
+</html>
