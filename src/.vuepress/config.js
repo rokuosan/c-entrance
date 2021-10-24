@@ -3,6 +3,7 @@ module.exports ={
     description: 'C言語の基本',
     dest: 'docs',
     base: '/clang-entrance/',
+    publicPath: './',
     head: [
         ['meta', { name: 'theme-color', content: '#3eaf7c' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -41,8 +42,5 @@ module.exports ={
                 'basic-syntax/'
             ]
         }
-    },
-    configureWebpack: (config) =>{
-        config.output.publicPath = 'docs'
     }
 }
