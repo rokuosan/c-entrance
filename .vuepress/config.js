@@ -1,7 +1,7 @@
 module.exports ={
     title: 'ざっくりわかるC言語入門',
     description: 'C言語の基本',
-    dest: 'docs/',
+    dest: 'docs',
     base: '/clang-entrance/',
     head: [
         ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -28,16 +28,17 @@ module.exports ={
             ],
             '/basic-syntax/':[
                 '',
+                'variable',
                 'if',
                 'for',
                 'while',
-                'switch',
-                'variable'
+                'switch'
             ],
             '/': [
                 '',
                 'environment/',
-                'tutorial/'
+                'tutorial/',
+                'basic-syntax/'
             ]
         }
     }
