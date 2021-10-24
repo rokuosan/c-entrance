@@ -14,7 +14,7 @@ module.exports ={
             { text: 'ホーム', link: '/' },
             { text: '環境構築', link: '/environment/'},
             { text: 'チュートリアル', link: '/tutorial/' },
-            { text: '基本構文', link: '/basic-syntax/'},
+            { text: '基本的な文法', link: '/basic-syntax/'},
         ],
         sidebarDepth: 2,
         sidebar: {
@@ -26,6 +26,7 @@ module.exports ={
             ],
             '/tutorial/': [
                 '',
+                'empty_function'
             ],
             '/basic-syntax/':[
                 '',
