@@ -13,8 +13,9 @@ module.exports ={
         nav: [
             { text: 'ホーム', link: '/' },
             { text: '環境構築', link: '/environment/'},
-            { text: 'チュートリアル', link: '/tutorial/' },
-            { text: '基本的な文法', link: '/basic-syntax/'},
+            { text: 'C言語の基礎', items: [{ text: '基礎', link: '/tutorial/' }, { text: '特性', link: '/tutorial/characteristic' }, { text: '書き方/慣習', link: '/tutorial/how-to-write' }]},
+            { text: '基本構文', link: '/syntax/'},
+            { text: '問題集', link: '/questions/' },
         ],
         sidebarDepth: 2,
         sidebar: {
@@ -26,9 +27,14 @@ module.exports ={
             ],
             '/tutorial/': [
                 '',
-                'empty_function'
+                'characteristic',
+                'how-to-write',
+                'question'
             ],
-            '/basic-syntax/':[
+            '/questions/':[
+                ''
+            ],
+            '/syntax/':[
                 '',
                 'variable',
                 'if',
@@ -40,7 +46,8 @@ module.exports ={
                 '',
                 'environment/',
                 'tutorial/',
-                'basic-syntax/'
+                'syntax/',
+                'questions/'
             ]
         }
     }

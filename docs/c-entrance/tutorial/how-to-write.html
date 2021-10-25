@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>C言語の書き方/慣習 | ざっくりわかるC言語入門</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="C言語の基本">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/c-entrance/assets/css/0.styles.4b9f2a04.css" as="style"><link rel="preload" href="/c-entrance/assets/js/app.2661aeb3.js" as="script"><link rel="preload" href="/c-entrance/assets/js/2.a0be3db0.js" as="script"><link rel="preload" href="/c-entrance/assets/js/21.6337c5a6.js" as="script"><link rel="prefetch" href="/c-entrance/assets/js/10.8428568c.js"><link rel="prefetch" href="/c-entrance/assets/js/11.50fc49d5.js"><link rel="prefetch" href="/c-entrance/assets/js/12.1046f68b.js"><link rel="prefetch" href="/c-entrance/assets/js/13.c9745c0b.js"><link rel="prefetch" href="/c-entrance/assets/js/14.dc01d42b.js"><link rel="prefetch" href="/c-entrance/assets/js/15.d34abd19.js"><link rel="prefetch" href="/c-entrance/assets/js/16.06564151.js"><link rel="prefetch" href="/c-entrance/assets/js/17.e30abdf6.js"><link rel="prefetch" href="/c-entrance/assets/js/18.a0f807ea.js"><link rel="prefetch" href="/c-entrance/assets/js/19.e4223009.js"><link rel="prefetch" href="/c-entrance/assets/js/20.504ee8ea.js"><link rel="prefetch" href="/c-entrance/assets/js/22.1a9d05af.js"><link rel="prefetch" href="/c-entrance/assets/js/3.56d6df15.js"><link rel="prefetch" href="/c-entrance/assets/js/4.051c5ec0.js"><link rel="prefetch" href="/c-entrance/assets/js/5.3e7b0f9f.js"><link rel="prefetch" href="/c-entrance/assets/js/6.76d53a1e.js"><link rel="prefetch" href="/c-entrance/assets/js/7.8be2e03f.js"><link rel="prefetch" href="/c-entrance/assets/js/8.0efe9d13.js"><link rel="prefetch" href="/c-entrance/assets/js/9.7810a887.js">
+    <link rel="stylesheet" href="/c-entrance/assets/css/0.styles.4b9f2a04.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/c-entrance/" class="home-link router-link-active"><!----> <span class="site-name">ざっくりわかるC言語入門</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/c-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/c-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="C言語の基礎" class="dropdown-title"><span class="title">C言語の基礎</span> <span class="arrow down"></span></button> <button type="button" aria-label="C言語の基礎" class="mobile-dropdown-title"><span class="title">C言語の基礎</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/" class="nav-link router-link-active">
+  基礎
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/characteristic.html" class="nav-link">
+  特性
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/how-to-write.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  書き方/慣習
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/syntax/" class="nav-link">
+  基本構文
+</a></div><div class="nav-item"><a href="/c-entrance/questions/" class="nav-link">
+  問題集
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/c-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/c-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="C言語の基礎" class="dropdown-title"><span class="title">C言語の基礎</span> <span class="arrow down"></span></button> <button type="button" aria-label="C言語の基礎" class="mobile-dropdown-title"><span class="title">C言語の基礎</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/" class="nav-link router-link-active">
+  基礎
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/characteristic.html" class="nav-link">
+  特性
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/how-to-write.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  書き方/慣習
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/syntax/" class="nav-link">
+  基本構文
+</a></div><div class="nav-item"><a href="/c-entrance/questions/" class="nav-link">
+  問題集
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/c-entrance/tutorial/" aria-current="page" class="sidebar-link">C言語の基礎</a></li><li><a href="/c-entrance/tutorial/characteristic.html" class="sidebar-link">C言語の特性</a></li><li><a href="/c-entrance/tutorial/how-to-write.html" aria-current="page" class="active sidebar-link">C言語の書き方/慣習</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/c-entrance/tutorial/how-to-write.html#ソースコードの分解" class="sidebar-link">ソースコードの分解</a></li><li class="sidebar-sub-header"><a href="/c-entrance/tutorial/how-to-write.html#大文字小文字の区別" class="sidebar-link">大文字小文字の区別</a></li><li class="sidebar-sub-header"><a href="/c-entrance/tutorial/how-to-write.html#超重要なセミコロン" class="sidebar-link">超重要なセミコロン</a></li><li class="sidebar-sub-header"><a href="/c-entrance/tutorial/how-to-write.html#他人のためのインデント-字下げ" class="sidebar-link">他人のためのインデント(字下げ)</a></li><li class="sidebar-sub-header"><a href="/c-entrance/tutorial/how-to-write.html#忘れないようにコメントする" class="sidebar-link">忘れないようにコメントする</a></li></ul></li><li><a href="/c-entrance/tutorial/question.html" class="sidebar-link">確認問題</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="c言語の書き方-慣習"><a href="#c言語の書き方-慣習" class="header-anchor">#</a> C言語の書き方/慣習</h1> <p>この節では、C言語の書き方や慣習などをそれっぽく説明します。</p> <h2 id="ソースコードの分解"><a href="#ソースコードの分解" class="header-anchor">#</a> ソースコードの分解</h2> <p>日本語にも文、文節といった区切りがあるように、C言語でも同様に区切りがあります。</p> <p>そのなかでも非常に重要なのが<strong>トークン</strong>(token)と呼ばれる日本語で言う単語にあたるものがあります。</p> <p>基本的にどんなプログラミング言語も命令の文となるものは、このトークンが複雑に混ざり作られています。</p> <p>このトークンとトークンの間は必ずスペースを開ける必要があります。</p> <p>チュートリアルで作成したソースコードをトークンに分けると以下のようになります。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span>
+<span class="token function">main</span>
+<span class="token punctuation">(</span>
+<span class="token keyword">void</span>
+<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+<span class="token function">printf</span>
+<span class="token punctuation">(</span>
+<span class="token string">&quot;Hello World&quot;</span>
+<span class="token punctuation">)</span>
+<span class="token punctuation">;</span>
+<span class="token keyword">return</span>
+<span class="token number">0</span>
+<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>人間が見てもこれならギリギリなんとか意味が読み取れます。</p> <p>ですが、`void<code>が</code>vo id``のようになると、どうでしょうか？</p> <p>これらは別のトークンであると認識され、コンパイルエラーになります。</p> <p>また、<code>int main</code>を<code>intmain</code>のようにトークン同士を結合しても同様にコンパイルエラーになります。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>ちなみにトークンの順序さえ正しければ以下のように一行で書くこともできます。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+</code></pre></div></div> <p>また、トークンを複数まとめて一つの命令にしたものを<strong>文</strong>(statement)と呼びます。</p> <h2 id="大文字小文字の区別"><a href="#大文字小文字の区別" class="header-anchor">#</a> 大文字小文字の区別</h2> <p><code>HOGE</code>と<code>hoge</code>では全く別物のトークンとして扱われます。</p> <p>うっかり間違えないようにしましょう。</p> <h2 id="超重要なセミコロン"><a href="#超重要なセミコロン" class="header-anchor">#</a> 超重要なセミコロン</h2> <p>C言語で最もやりがちなミスなんじゃないでしょうか。</p> <p>C言語では文の最後には必ず<strong>セミコロン</strong>( ; ←こいつ)を置く必要があります。</p> <p>ついつい置き忘れてコンパイルエラーなんてことはよくあります。</p> <p>そんなときは落ち着いて忘れた行に付け足しましょう。</p> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p>しれっと書いていますが、非常に重要なので忘れないようにしてください</p></div> <h2 id="他人のためのインデント-字下げ"><a href="#他人のためのインデント-字下げ" class="header-anchor">#</a> 他人のためのインデント(字下げ)</h2> <p>先程、トークンの順序が正しければどんな風に書いても問題はないと説明しました。</p> <p>ではそれに則ってこんなプログラムを書いてみました。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span>             <span class="token function">main</span><span class="token punctuation">(</span>
+    <span class="token keyword">void</span>
+<span class="token punctuation">)</span>
+
+<span class="token punctuation">{</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;The best of KUSO Code&quot;</span>   
+                                        <span class="token punctuation">)</span>
+
+<span class="token punctuation">;</span>           <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+</code></pre></div><p>どうでしょうか。</p> <p>明らかに見にくいのが分かることでしょう。</p> <p>仮に私がこのコードを受け取ったら今すぐパソコンを窓から投げ捨てることでしょう。</p> <p>では、どのようにすれば他人が見ても見やすくなるでしょう。</p> <p>それは<strong>インデント</strong>(字下げ)を使用することです。</p> <p>ある程度、意味がまとまるようトークンを整理した後、今自分がどの階層にいるのかを分かりやすくインデントを使用して空白を開けてみましょう。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;The best of KUSO Code...?&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>するとどうでしょう。圧倒的に見やすくなったことでしょう。</p> <p>普段から他人が見てもわかりやすいようなソースコードを意識して書いておきましょう。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>インデントを使用するときは TABキー を入力すると自動で空白を開けてくれます。<br>
+非常に便利なので覚えておきましょう。</p></div> <p>ちなみにこれに関する面白い動画があるので共有しておきます。(真に受けてプログラミングやめるなんてことは駄目ですよ)</p> <div style="left:0;width:100%;height:0;position:relative;padding-bottom:56.25%;"><iframe src="https://www.youtube.com/embed/qNHfKNjX8Us?rel=0" allowfullscreen="allowfullscreen" scrolling="no" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" style="top:0;left:0;width:100%;height:100%;position:absolute;border:0;"></iframe></div> <h2 id="忘れないようにコメントする"><a href="#忘れないようにコメントする" class="header-anchor">#</a> 忘れないようにコメントする</h2> <p>「あれ、このコードなんの処理だっけ？」</p> <p>なんてことが、今後一回は起きるはずです。</p> <p>そんな事態を解決するために <strong>コメント</strong> を必ず残しておきましょう。</p> <p>コメントとは、プログラム内に記すことができるメッセージのことです。</p> <p>以下のように使用します。</p> <div class="language-c extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br></div><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// Hello Worldを出力する</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>このハイライトされた部分がコメントになります。</p> <p>先頭に <code>//</code> とすることでその行全体をコメントにすることができます。</p> <p>それに対して以下のようにすることで範囲を指定してコメントにすることができます。</p> <div class="language-c extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br></div><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">/*
+     Hello World
+        を出力する
+    */</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>/* */</code>で囲むことで囲まれた部分をそのままコメントにできます。</p> <p>ちなみにこの、コメントにする動作のことをコメントアウトと言ったりします。</p> <p>コメントはプログラムの動作には一切影響しないので積極的に活用してください。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/c-entrance/tutorial/characteristic.html" class="prev">
+        C言語の特性
+      </a></span> <span class="next"><a href="/c-entrance/tutorial/question.html">
+        確認問題
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/c-entrance/assets/js/app.2661aeb3.js" defer></script><script src="/c-entrance/assets/js/2.a0be3db0.js" defer></script><script src="/c-entrance/assets/js/21.6337c5a6.js" defer></script>
+  </body>
+</html>

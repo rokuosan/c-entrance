@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>C言語の特性 | ざっくりわかるC言語入門</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="C言語の基本">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/c-entrance/assets/css/0.styles.4b9f2a04.css" as="style"><link rel="preload" href="/c-entrance/assets/js/app.2661aeb3.js" as="script"><link rel="preload" href="/c-entrance/assets/js/2.a0be3db0.js" as="script"><link rel="preload" href="/c-entrance/assets/js/20.504ee8ea.js" as="script"><link rel="prefetch" href="/c-entrance/assets/js/10.8428568c.js"><link rel="prefetch" href="/c-entrance/assets/js/11.50fc49d5.js"><link rel="prefetch" href="/c-entrance/assets/js/12.1046f68b.js"><link rel="prefetch" href="/c-entrance/assets/js/13.c9745c0b.js"><link rel="prefetch" href="/c-entrance/assets/js/14.dc01d42b.js"><link rel="prefetch" href="/c-entrance/assets/js/15.d34abd19.js"><link rel="prefetch" href="/c-entrance/assets/js/16.06564151.js"><link rel="prefetch" href="/c-entrance/assets/js/17.e30abdf6.js"><link rel="prefetch" href="/c-entrance/assets/js/18.a0f807ea.js"><link rel="prefetch" href="/c-entrance/assets/js/19.e4223009.js"><link rel="prefetch" href="/c-entrance/assets/js/21.6337c5a6.js"><link rel="prefetch" href="/c-entrance/assets/js/22.1a9d05af.js"><link rel="prefetch" href="/c-entrance/assets/js/3.56d6df15.js"><link rel="prefetch" href="/c-entrance/assets/js/4.051c5ec0.js"><link rel="prefetch" href="/c-entrance/assets/js/5.3e7b0f9f.js"><link rel="prefetch" href="/c-entrance/assets/js/6.76d53a1e.js"><link rel="prefetch" href="/c-entrance/assets/js/7.8be2e03f.js"><link rel="prefetch" href="/c-entrance/assets/js/8.0efe9d13.js"><link rel="prefetch" href="/c-entrance/assets/js/9.7810a887.js">
+    <link rel="stylesheet" href="/c-entrance/assets/css/0.styles.4b9f2a04.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/c-entrance/" class="home-link router-link-active"><!----> <span class="site-name">ざっくりわかるC言語入門</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/c-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/c-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="C言語の基礎" class="dropdown-title"><span class="title">C言語の基礎</span> <span class="arrow down"></span></button> <button type="button" aria-label="C言語の基礎" class="mobile-dropdown-title"><span class="title">C言語の基礎</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/" class="nav-link router-link-active">
+  基礎
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/characteristic.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  特性
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/how-to-write.html" class="nav-link">
+  書き方/慣習
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/syntax/" class="nav-link">
+  基本構文
+</a></div><div class="nav-item"><a href="/c-entrance/questions/" class="nav-link">
+  問題集
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/c-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/c-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="C言語の基礎" class="dropdown-title"><span class="title">C言語の基礎</span> <span class="arrow down"></span></button> <button type="button" aria-label="C言語の基礎" class="mobile-dropdown-title"><span class="title">C言語の基礎</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/" class="nav-link router-link-active">
+  基礎
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/characteristic.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  特性
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/how-to-write.html" class="nav-link">
+  書き方/慣習
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/syntax/" class="nav-link">
+  基本構文
+</a></div><div class="nav-item"><a href="/c-entrance/questions/" class="nav-link">
+  問題集
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/c-entrance/tutorial/" aria-current="page" class="sidebar-link">C言語の基礎</a></li><li><a href="/c-entrance/tutorial/characteristic.html" aria-current="page" class="active sidebar-link">C言語の特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/c-entrance/tutorial/characteristic.html#基本的な構造" class="sidebar-link">基本的な構造</a></li><li class="sidebar-sub-header"><a href="/c-entrance/tutorial/characteristic.html#関数とは" class="sidebar-link">関数とは</a></li><li class="sidebar-sub-header"><a href="/c-entrance/tutorial/characteristic.html#main-も関数の一つ" class="sidebar-link">main()も関数の一つ</a></li><li class="sidebar-sub-header"><a href="/c-entrance/tutorial/characteristic.html#main関数の特性" class="sidebar-link">main関数の特性</a></li><li class="sidebar-sub-header"><a href="/c-entrance/tutorial/characteristic.html#まとめ" class="sidebar-link">まとめ</a></li></ul></li><li><a href="/c-entrance/tutorial/how-to-write.html" class="sidebar-link">C言語の書き方/慣習</a></li><li><a href="/c-entrance/tutorial/question.html" class="sidebar-link">確認問題</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="c言語の特性"><a href="#c言語の特性" class="header-anchor">#</a> C言語の特性</h1> <p>この節ではC言語の学習を始めるにあたっての事前知識等を知ることができます。</p> <h2 id="基本的な構造"><a href="#基本的な構造" class="header-anchor">#</a> 基本的な構造</h2> <p>C言語のプログラムを理解しやすくなる1つのキーワードとして、 <strong>「C言語は関数の集合体」</strong> ということを覚えておいてください。</p> <p>様々な関数が無数に集まり、それらを集約させて欲しい機能を実現したのが一つのソフトウェアとなります。</p> <h2 id="関数とは"><a href="#関数とは" class="header-anchor">#</a> 関数とは</h2> <p>前節で作成した以下のプログラムの中にも関数がいくつか含まれています。</p> <p>わかりやすいのはハイライトされている部分です。</p> <div class="language-c extra-class"><div class="highlight-lines"><br><br><br><br><div class="highlighted"> </div><br><br><br><br></div><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// Hello Worldを出力する</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>この<code>printf(&quot;Hello World&quot;);</code> という文ですが、これを抽象化すると以下のようになります。</p> <div class="language- extra-class"><pre class="language-text"><code>関数名(引数);
+</code></pre></div><p>関数名にあたる部分が<code>printf</code>、引数にあたる部分がクオーテーションで囲われた<code>&quot;Hello World&quot;</code>という部分です。</p> <p>抽象化されたものをみると、数学でよく見る関数とよく似ていることに気づくかと思います。</p> <p><em>f(x)</em> の<code>f</code>が関数名、<code>x</code>が引数と考えるとほぼ同じのように思えます。</p> <p>確かにその通りですが、数学では関数を使うと答えが一つに定まりますが、プログラムではそうとも限りません。</p> <p>プログラムでの関数はもととなる英語、functionの意味の一つである <strong>機能</strong> と捉えた方が分かりやすいかと思います。</p> <p>したがって、この<code>printf()</code>という関数は <strong>プロンプトに引数の文字を出力する機能</strong> を持っていると考えることが出来ます。</p> <p>これにより、先程のプログラムにある <code>printf(&quot;Hello World&quot;);</code> が <code>Hello World</code> を出力したということにも頷けるはずです。</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p><code>printf()</code>は今後の解説でも非常によく使うので覚えておいてください。<br></p></div> <h2 id="main-も関数の一つ"><a href="#main-も関数の一つ" class="header-anchor">#</a> main()も関数の一つ</h2> <p>さて、チュートリアルで作成した以下のソースコードですが、<code>printf()</code> の他に実はもう一つ関数が存在します。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// Hello Worldを出力する</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>それは、<code>main()</code>関数です。</p> <p>「なんか違うじゃん」</p> <p>その通りです。</p> <p>前項で関数を説明した際、以下のように表現しました。</p> <div class="language- extra-class"><pre class="language-text"><code>関数名(引数);
+</code></pre></div><p>比べてみると、<code>main()</code> は少し違うように思えますね。おそらくその原因はその前にある<code>int</code>と<code>{}</code>の存在でしょう。</p> <p>これらは後に解説しますが、それぞれデータ型とブロックと呼ばれるものです。</p> <p>これらを利用することで我々人間は関数を自由に定義することができます。</p> <p>関数の定義は以下のように表現できます。</p> <div class="language- extra-class"><pre class="language-text"><code>データ型 関数名(引数){ 処理 }
+</code></pre></div><p>「なるほど。つまりどういうこと？」</p> <p>という声が聞こえてきそうです。</p> <p>当然、現段階でこれを覚えておく必要はありません。</p> <p>ただ、今後C言語の学習をするときこの事を念頭に置いておくと少しは理解がしやすくなるかと思います。</p> <p>なので今はざっくり以下のように覚えていてください。</p> <p><strong>関数を呼び出すときは <code>関数名(引数);</code> である！！</strong></p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>先程の <code>{ 処理 }</code> という部分は空にすることも出来ます。<br>
+ただし、そうなれば何もしない関数。すなわち何もできないプログラムが完成します。</p></div> <h2 id="main関数の特性"><a href="#main関数の特性" class="header-anchor">#</a> main関数の特性</h2> <p>先程説明したようにC言語は関数の集合体です。</p> <p>関数が沢山集まれば、当然「どれから実行するか？」という問題が発生します。<br>
+コンピュータには人間のように選択するような機能は備わっていません。<br>
+そのため、予めどれから実行するかを人間が示しておく必要があります。<br></p> <p>その役割を果たすのがこの<code>main()</code>関数です。</p> <p>プログラム中に<code>main()</code>関数を記述しておくことで、コンピュータは迷わずにこの関数内に記述されたものを実行することができます。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>C言語において<code>main()</code>関数は唯一自動で実行してくれる関数です。<br>
+そのため、もし<code>main()</code>関数を書かなかった場合はコンピュータは何も行いません。<br></p></div> <h2 id="まとめ"><a href="#まとめ" class="header-anchor">#</a> まとめ</h2> <ul><li>C言語は関数の集合体である</li> <li>関数は何かの機能を持つものである</li> <li>関数を呼び出すときは <code>関数名(引数);</code> である</li> <li>main()関数は勝手に実行してくれる</li></ul> <div class="custom-block tip"><p class="custom-block-title">ちなみに</p> <p>今節で解説していない<code>#include &lt;stdio.h&gt;</code>や、<code>main()</code>の前後にある<code>int</code>や<code>void</code>については後々解説します。</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/c-entrance/tutorial/" class="prev router-link-active">
+        C言語の基礎
+      </a></span> <span class="next"><a href="/c-entrance/tutorial/how-to-write.html">
+        C言語の書き方/慣習
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/c-entrance/assets/js/app.2661aeb3.js" defer></script><script src="/c-entrance/assets/js/2.a0be3db0.js" defer></script><script src="/c-entrance/assets/js/20.504ee8ea.js" defer></script>
+  </body>
+</html>
