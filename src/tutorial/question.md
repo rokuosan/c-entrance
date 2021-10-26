@@ -1,5 +1,5 @@
 ---
-next: '/syntax/'
+next: '/basic/'
 ---
 # 確認問題
 

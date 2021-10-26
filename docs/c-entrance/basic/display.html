@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>画面表示 | ざっくりわかるC言語入門</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="C言語の基本">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/c-entrance/assets/css/0.styles.4b9f2a04.css" as="style"><link rel="preload" href="/c-entrance/assets/js/app.bdf13c16.js" as="script"><link rel="preload" href="/c-entrance/assets/js/2.a0be3db0.js" as="script"><link rel="preload" href="/c-entrance/assets/js/10.e122d619.js" as="script"><link rel="prefetch" href="/c-entrance/assets/js/11.d46c3566.js"><link rel="prefetch" href="/c-entrance/assets/js/12.e4592457.js"><link rel="prefetch" href="/c-entrance/assets/js/13.0fcc6fb0.js"><link rel="prefetch" href="/c-entrance/assets/js/14.49ea6253.js"><link rel="prefetch" href="/c-entrance/assets/js/15.6367683b.js"><link rel="prefetch" href="/c-entrance/assets/js/16.0d39a655.js"><link rel="prefetch" href="/c-entrance/assets/js/17.9b1ae08b.js"><link rel="prefetch" href="/c-entrance/assets/js/18.5c6b4c89.js"><link rel="prefetch" href="/c-entrance/assets/js/19.f247d96c.js"><link rel="prefetch" href="/c-entrance/assets/js/20.d6d2177e.js"><link rel="prefetch" href="/c-entrance/assets/js/21.653bdc22.js"><link rel="prefetch" href="/c-entrance/assets/js/22.c1c72b9f.js"><link rel="prefetch" href="/c-entrance/assets/js/23.06e890c3.js"><link rel="prefetch" href="/c-entrance/assets/js/24.894719be.js"><link rel="prefetch" href="/c-entrance/assets/js/25.fdf1a7fd.js"><link rel="prefetch" href="/c-entrance/assets/js/3.ca79e7d0.js"><link rel="prefetch" href="/c-entrance/assets/js/4.9e4b3a1a.js"><link rel="prefetch" href="/c-entrance/assets/js/5.3e7b0f9f.js"><link rel="prefetch" href="/c-entrance/assets/js/6.76d53a1e.js"><link rel="prefetch" href="/c-entrance/assets/js/7.8be2e03f.js"><link rel="prefetch" href="/c-entrance/assets/js/8.ec70ab90.js"><link rel="prefetch" href="/c-entrance/assets/js/9.13b08bc5.js">
+    <link rel="stylesheet" href="/c-entrance/assets/css/0.styles.4b9f2a04.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/c-entrance/" class="home-link router-link-active"><!----> <span class="site-name">ざっくりわかるC言語入門</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/c-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/c-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="C言語入門" class="dropdown-title"><span class="title">C言語入門</span> <span class="arrow down"></span></button> <button type="button" aria-label="C言語入門" class="mobile-dropdown-title"><span class="title">C言語入門</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/hello-world.html" class="nav-link">
+  HelloWorld
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/characteristic.html" class="nav-link">
+  特性
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/how-to-write.html" class="nav-link">
+  書き方/慣習
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/basic/" class="nav-link router-link-active">
+  C言語基礎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基本構文" class="dropdown-title"><span class="title">基本構文</span> <span class="arrow down"></span></button> <button type="button" aria-label="基本構文" class="mobile-dropdown-title"><span class="title">基本構文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/variable.html" class="nav-link">
+  変数について
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/if.html" class="nav-link">
+  if 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/for.html" class="nav-link">
+  for 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/while.html" class="nav-link">
+  while 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/switch.html" class="nav-link">
+  switch 文
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/questions/" class="nav-link">
+  問題集
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/c-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/c-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="C言語入門" class="dropdown-title"><span class="title">C言語入門</span> <span class="arrow down"></span></button> <button type="button" aria-label="C言語入門" class="mobile-dropdown-title"><span class="title">C言語入門</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/hello-world.html" class="nav-link">
+  HelloWorld
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/characteristic.html" class="nav-link">
+  特性
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/how-to-write.html" class="nav-link">
+  書き方/慣習
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/basic/" class="nav-link router-link-active">
+  C言語基礎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基本構文" class="dropdown-title"><span class="title">基本構文</span> <span class="arrow down"></span></button> <button type="button" aria-label="基本構文" class="mobile-dropdown-title"><span class="title">基本構文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/variable.html" class="nav-link">
+  変数について
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/if.html" class="nav-link">
+  if 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/for.html" class="nav-link">
+  for 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/while.html" class="nav-link">
+  while 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/switch.html" class="nav-link">
+  switch 文
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/questions/" class="nav-link">
+  問題集
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>画面表示</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/c-entrance/basic/display.html#文字列を表示する" class="sidebar-link">文字列を表示する</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/c-entrance/basic/display.html#プログラムを書いてみる" class="sidebar-link">プログラムを書いてみる</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/c-entrance/basic/display.html#実行する" class="sidebar-link">実行する</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/c-entrance/basic/display.html#改行してみよう" class="sidebar-link">改行してみよう</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/c-entrance/basic/display.html#復習問題" class="sidebar-link">復習問題</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="画面表示"><a href="#画面表示" class="header-anchor">#</a> 画面表示</h1> <p>ここでは画面に文字列を表示する方法を知ることができます。</p> <p>ここで紹介する関数などは<strong>非常に重要</strong>になるのでしっかりと習得しておきましょう。</p> <details class="custom-block details"><summary>目次</summary> <p></p><div class="table-of-contents"><ul><li><a href="#文字列を表示する">文字列を表示する</a></li><li><a href="#プログラムを書いてみる">プログラムを書いてみる</a></li><li><a href="#実行する">実行する</a></li><li><a href="#改行してみよう">改行してみよう</a></li><li><a href="#復習問題">復習問題</a></li></ul></div><p></p></details> <h2 id="文字列を表示する"><a href="#文字列を表示する" class="header-anchor">#</a> 文字列を表示する</h2> <p>文字列を表示するというのは実はもうやっていたりします。</p> <p>そうです、<code>printf()</code>です。</p> <p>使用する方法は以下の通りです。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;文字列&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>このダブルクオーテーションで囲った部分に書いたことがプロンプト上に表示されます。</p> <p>さて、この関数をプログラム中に書けば使えるようになるわけですが、どこに書くべきでしょうか？</p> <ol><li>C言語はmain()から始まる。言い換えるとmain()は必ず必要である。</li> <li>(1)より、printf()だけではまず動かない。</li></ol> <p>以上の項目を踏まえて考えてみると書くべき場所に察しが付いたかと思います。</p> <p>正解は<code>main()</code>の中です。</p> <h2 id="プログラムを書いてみる"><a href="#プログラムを書いてみる" class="header-anchor">#</a> プログラムを書いてみる</h2> <p>main()に書けばいいことがわかったので早速書いてみましょう。</p> <p>[ print.c ]</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// main()の中にprintf()を書いてみる</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;文字列が表示できました！&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>さて、これをコンパイルしてみましょう。</p> <p>...ってあれ??コンパイルエラーになってしまいました。</p> <p>[ Command Prompt ]</p> <div class="language-bash extra-class"><pre class="language-bash"><code>print.c: In <span class="token keyword">function</span> ‘main’:
+print.c:3:5: warning: implicit declaration of <span class="token keyword">function</span> ‘printf’ <span class="token punctuation">[</span>-Wimplicit-function-declaration<span class="token punctuation">]</span>
+    <span class="token number">3</span> <span class="token operator">|</span>     printf<span class="token punctuation">(</span><span class="token string">&quot;文字列が表示できました！&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token operator">|</span>     ^~~~~~
+print.c:3:5: warning: incompatible implicit declaration of built-in <span class="token keyword">function</span> ‘printf’
+</code></pre></div><p>実は<strong>printf()を使用するには<code>stdio.h</code>というヘッダファイルを読み込む必要があります。</strong></p> <p>また、そのヘッダファイルを読み込むためには <code>#include</code> というプリプロセッサ命令を出す必要があります。</p> <div class="custom-block tip"><p class="custom-block-title">ヘッダファイル / プリプロセッサ命令とは ?</p> <ul><li>ヘッダファイル
+<ul><li>printf()などの関数などが書かれた辞書のようなものです。読み込むだけで、その中に記されたものが使用できます。<br>今は処理する内容が予め定義されているファイルだと思ってください。</li></ul></li> <li>プリプロセッサ命令
+<ul><li>コンパイルする前に行う処理のこと。<code>#</code>から始まるので簡単に見分けがつくはずです。</li></ul></li></ul></div> <p>そしてその#includeを使用するにはソースコードの先頭に命令を追加します。</p> <p>修正したソースコードが以下になります。</p> <div class="language-c extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br></div><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// main()の中にprintf()を書いてみる</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;文字列が表示できました！&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>一行目に<code>#include &lt;stdio.h&gt;</code>を追加したあと、もう一度コンパイルしてください。</p> <p>そうするとエラーは綺麗サッパリ消えていることでしょう。</p> <h2 id="実行する"><a href="#実行する" class="header-anchor">#</a> 実行する</h2> <p>コンパイルが出来たら、実行してみましょう。</p> <p>しっかりと文字列が表示されていることでしょう。</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>もし、文字がおかしく表示されている場合は文字コードをShift-JISに変更することで正しく表示されるはずです。<br>
+Googleなどで「{エディタ名} 文字コード 変更」といったように調べてください。</p></div> <h2 id="改行してみよう"><a href="#改行してみよう" class="header-anchor">#</a> 改行してみよう</h2> <p>これで文字列を自由に表示できるようになりました。</p> <p>では様々な文字を表示してみましょう。</p> <p>例文として以下の文章を表示してみます。</p> <div class="language- extra-class"><pre class="language-text"><code>考えたってわからないし
+青空の中、君を待った。
+風が吹いた正午、昼下がりを抜け出す想像。
+</code></pre></div><p>これをこんな感じで...</p> <p>[ yorusika.c ]</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;考えたってわからないし&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;青空の中、君を待った。&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;風が吹いた正午、昼下がりを抜け出す想像。&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>コンパイルして...実行！！</p> <p>ってあれ...？？なぜか一行で表示されました。</p> <p>[ yorusika.exe ]</p> <div class="language- extra-class"><pre class="language-text"><code>考えたってわからないし青空の中、君を待った。風が吹いた正午、昼下がりを抜け出す想像。
+</code></pre></div><p>改行が出来てません。</p> <p>そしてこれを解消するには<strong>エスケープシーケンス</strong>(特殊文字)と呼ばれるものを使用します。</p> <p>よく使うエスケープシーケンスは3つ挙げてみます。</p> <ul><li><code>\b</code> : バックスペース / 一文字削除</li> <li><code>\n</code> : 復帰改行</li> <li><code>\t</code> : 水平タブ</li></ul> <p>この中で改行を示すのは書いてあるように <code>\n</code>です。</p> <p>これをprintf()内の文字列の中に入れましょう。</p> <p>そうすると以下のようになります。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;考えたってわからないし\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;青空の中、君を待った。\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;風が吹いた正午、昼下がりを抜け出す想像。\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>そしてこれをコンパイルして実行します。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>考えたってわからないし
+青空の中、君を待った。
+風が吹いた正午、昼下がりを抜け出す想像。
+</code></pre></div><p>ちゃんと改行されました。</p> <h2 id="復習問題"><a href="#復習問題" class="header-anchor">#</a> 復習問題</h2> <div class="custom-block tip"><p class="custom-block-title">問, 1</p> <p>文字列を出力する関数はなにか。</p></div> <details class="custom-block details"><summary>答え</summary> <p>printf()</p></details> <div class="custom-block tip"><p class="custom-block-title">問, 2</p> <p>ある関数をソースコード内で利用したい。<br>
+どこに書くべきか。</p></div> <details class="custom-block details"><summary>答え</summary> <p>main()</p></details> <div class="custom-block tip"><p class="custom-block-title">問, 3</p> <p>printf()を利用するために読み込むヘッダファイル名は何か。</p></div> <details class="custom-block details"><summary>答え</summary> <p>stdio.h</p></details> <div class="custom-block tip"><p class="custom-block-title">問, 4</p> <p>改行を文字列内で行いたい。<br>
+なにを入力すればよいか。</p></div> <details class="custom-block details"><summary>答え</summary> <p>\n<br>
+(エスケープシーケンスでは不十分)</p></details> <div class="custom-block tip"><p class="custom-block-title">問, 5</p> <p>以下の文字列を出力したい。ソースコードを書いて回答する。</p> <div class="language- extra-class"><pre class="language-text"><code>こんにちは。
+今日はいい天気です。
+明日は晴れるといいな。
+</code></pre></div></div> <details class="custom-block details"><summary>答え</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;こんにちは。\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;今日はいい天気です。\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;明日は晴れるといいな。\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><details class="custom-block details"><summary>一行にまとめてこのように書くこともできます。</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;こんにちは。今日はいい天気です。明日は晴れるといいな。\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></details></details></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/c-entrance/assets/js/app.bdf13c16.js" defer></script><script src="/c-entrance/assets/js/2.a0be3db0.js" defer></script><script src="/c-entrance/assets/js/10.e122d619.js" defer></script>
+  </body>
+</html>
