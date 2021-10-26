@@ -237,7 +237,7 @@ int main(void){
 #include <stdio.h>
 
 int main(void){
-    printf("こんにちは。今日はいい天気です。明日は晴れるといいな。\n");
+    printf("こんにちは。\n今日はいい天気です。\n明日は晴れるといいな。\n");
 
     return 0;
 }
