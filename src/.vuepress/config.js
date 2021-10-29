@@ -13,9 +13,9 @@ module.exports ={
         nav: [
             { text: 'ホーム', link: '/' },
             { text: '環境構築', link: '/environment/'},
-            { text: 'C言語入門', items: [{ text: 'HelloWorld', link: '/tutorial/hello-world' }, { text: '特性', link: '/tutorial/characteristic' }, { text: '書き方/慣習', link: '/tutorial/how-to-write' }]},
-            { text: 'C言語基礎', link: '/basic/' },
-            { text: '基本構文', items: [{ text: '変数について', link: '/syntax/variable' }, { text: 'if 文', link: '/syntax/if' }, { text: 'for 文', link: '/syntax/for' }, { text: 'while 文', link: '/syntax/while' }, { text: 'switch 文', link: '/syntax/switch' }]},
+            { text: 'C言語入門', items: [{ text: 'C言語入門', link: '/tutorial/introduction' },{ text: 'HelloWorld', link: '/tutorial/hello-world' }, { text: '特性', link: '/tutorial/characteristic' }, { text: '書き方/慣習', link: '/tutorial/how-to-write' }]},
+            { text: 'C言語基礎', link: '/basic/introduction' },
+            { text: '基本構文', items: [{ text: '基本構文', link: '/syntax/introduction' },{ text: '変数について', link: '/syntax/variable' }, { text: 'if 文', link: '/syntax/if' }, { text: 'for 文', link: '/syntax/for' }, { text: 'while 文', link: '/syntax/while' }, { text: 'switch 文', link: '/syntax/switch' }]},
             { text: '問題集', link: '/questions/' },
         ],
         sidebarDepth: 2,
@@ -27,21 +27,21 @@ module.exports ={
                 'editor-vscode'
             ],
             '/tutorial/': [
-                '',
+                'introduction',
                 'hello-world',
                 'characteristic',
                 'how-to-write',
                 'question'
             ],
-            '/basic/': [
-                '',
+            '/basic/introduction': [
+                'introduction',
                 'display'
             ],
             '/questions/':[
                 ''
             ],
-            '/syntax/':[
-                '',
+            '/syntax/introduction':[
+                'introduction',
                 'variable',
                 'if',
                 'for',
@@ -51,9 +51,9 @@ module.exports ={
             '/': [
                 '',
                 'environment/',
-                'tutorial/',
-                'basic/',
-                'syntax/',
+                'tutorial/introduction',
+                'basic/introduction',
+                'syntax/introduction',
                 'questions/'
             ]
         }

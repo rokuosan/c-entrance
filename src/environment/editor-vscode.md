@@ -1,5 +1,5 @@
 ---
-next: '/tutorial/'
+next: '/tutorial/introduction'
 ---
 # Visual Studio Code
 :::warning
