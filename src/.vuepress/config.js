@@ -1,6 +1,6 @@
 module.exports ={
     title: 'ざっくりわかるC言語入門',
-    description: 'C言語の基本',
+    description: 'C言語の基本を自分なりにまとめてみました',
     dest: 'docs/c-entrance',
     base: '/c-entrance/',
     publicPath: './',
