@@ -1,5 +1,5 @@
 ---
-next: '/basic/'
+next: '/basic/introduction'
 ---
 # 確認問題
 
