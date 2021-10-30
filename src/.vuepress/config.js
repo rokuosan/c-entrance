@@ -41,7 +41,7 @@ module.exports ={
             '/questions/':[
                 ''
             ],
-            '/syntax/introduction':[
+            '/syntax/':[
                 'introduction',
                 'variable',
                 'if',
