@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数値と文字列 | ざっくりわかるC言語入門</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="C言語の基本を自分なりにまとめてみました">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/c-entrance/assets/css/0.styles.4b9f2a04.css" as="style"><link rel="preload" href="/c-entrance/assets/js/app.85ba40a9.js" as="script"><link rel="preload" href="/c-entrance/assets/js/2.a0be3db0.js" as="script"><link rel="preload" href="/c-entrance/assets/js/12.3ec1da63.js" as="script"><link rel="prefetch" href="/c-entrance/assets/js/10.8842ac8d.js"><link rel="prefetch" href="/c-entrance/assets/js/11.02ebae23.js"><link rel="prefetch" href="/c-entrance/assets/js/13.e42abc6d.js"><link rel="prefetch" href="/c-entrance/assets/js/14.b03f6213.js"><link rel="prefetch" href="/c-entrance/assets/js/15.ca688a99.js"><link rel="prefetch" href="/c-entrance/assets/js/16.8b19f985.js"><link rel="prefetch" href="/c-entrance/assets/js/17.8bce7a7e.js"><link rel="prefetch" href="/c-entrance/assets/js/18.efd65b0c.js"><link rel="prefetch" href="/c-entrance/assets/js/19.70ac2d9a.js"><link rel="prefetch" href="/c-entrance/assets/js/20.ea332215.js"><link rel="prefetch" href="/c-entrance/assets/js/21.5d84c6f7.js"><link rel="prefetch" href="/c-entrance/assets/js/22.93f12f12.js"><link rel="prefetch" href="/c-entrance/assets/js/23.da8d431f.js"><link rel="prefetch" href="/c-entrance/assets/js/24.81c4a9b8.js"><link rel="prefetch" href="/c-entrance/assets/js/25.d4f83170.js"><link rel="prefetch" href="/c-entrance/assets/js/26.0c9e7ae6.js"><link rel="prefetch" href="/c-entrance/assets/js/27.087fb13c.js"><link rel="prefetch" href="/c-entrance/assets/js/28.6a5ffe71.js"><link rel="prefetch" href="/c-entrance/assets/js/29.05d20eed.js"><link rel="prefetch" href="/c-entrance/assets/js/3.4817ec53.js"><link rel="prefetch" href="/c-entrance/assets/js/4.82920e69.js"><link rel="prefetch" href="/c-entrance/assets/js/5.3e7b0f9f.js"><link rel="prefetch" href="/c-entrance/assets/js/6.76d53a1e.js"><link rel="prefetch" href="/c-entrance/assets/js/7.8be2e03f.js"><link rel="prefetch" href="/c-entrance/assets/js/8.897c302d.js"><link rel="prefetch" href="/c-entrance/assets/js/9.0c820adf.js">
+    <link rel="stylesheet" href="/c-entrance/assets/css/0.styles.4b9f2a04.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/c-entrance/" class="home-link router-link-active"><!----> <span class="site-name">ざっくりわかるC言語入門</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/c-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/c-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="C言語入門" class="dropdown-title"><span class="title">C言語入門</span> <span class="arrow down"></span></button> <button type="button" aria-label="C言語入門" class="mobile-dropdown-title"><span class="title">C言語入門</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/introduction.html" class="nav-link">
+  C言語入門
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/hello-world.html" class="nav-link">
+  HelloWorld
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/characteristic.html" class="nav-link">
+  特性
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/how-to-write.html" class="nav-link">
+  書き方/慣習
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/basic/introduction.html" class="nav-link">
+  C言語基礎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基本構文" class="dropdown-title"><span class="title">基本構文</span> <span class="arrow down"></span></button> <button type="button" aria-label="基本構文" class="mobile-dropdown-title"><span class="title">基本構文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/introduction.html" class="nav-link">
+  基本構文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/variable.html" class="nav-link">
+  変数について
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/if.html" class="nav-link">
+  if 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/for.html" class="nav-link">
+  for 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/while.html" class="nav-link">
+  while 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/switch.html" class="nav-link">
+  switch 文
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/questions/" class="nav-link">
+  問題集
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/c-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/c-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="C言語入門" class="dropdown-title"><span class="title">C言語入門</span> <span class="arrow down"></span></button> <button type="button" aria-label="C言語入門" class="mobile-dropdown-title"><span class="title">C言語入門</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/introduction.html" class="nav-link">
+  C言語入門
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/hello-world.html" class="nav-link">
+  HelloWorld
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/characteristic.html" class="nav-link">
+  特性
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/how-to-write.html" class="nav-link">
+  書き方/慣習
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/basic/introduction.html" class="nav-link">
+  C言語基礎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基本構文" class="dropdown-title"><span class="title">基本構文</span> <span class="arrow down"></span></button> <button type="button" aria-label="基本構文" class="mobile-dropdown-title"><span class="title">基本構文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/introduction.html" class="nav-link">
+  基本構文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/variable.html" class="nav-link">
+  変数について
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/if.html" class="nav-link">
+  if 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/for.html" class="nav-link">
+  for 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/while.html" class="nav-link">
+  while 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/switch.html" class="nav-link">
+  switch 文
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/questions/" class="nav-link">
+  問題集
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/c-entrance/basic/introduction.html" class="sidebar-link">C言語基礎</a></li><li><a href="/c-entrance/basic/display.html" class="sidebar-link">画面表示</a></li><li><a href="/c-entrance/basic/number-and-string.html" aria-current="page" class="active sidebar-link">数値と文字列</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/c-entrance/basic/number-and-string.html#文字列とは" class="sidebar-link">文字列とは</a></li><li class="sidebar-sub-header"><a href="/c-entrance/basic/number-and-string.html#数値とは" class="sidebar-link">数値とは</a></li><li class="sidebar-sub-header"><a href="/c-entrance/basic/number-and-string.html#数値と文字列の見分け方" class="sidebar-link">数値と文字列の見分け方</a></li><li class="sidebar-sub-header"><a href="/c-entrance/basic/number-and-string.html#printf-で数値を表示する" class="sidebar-link">printf()で数値を表示する</a></li><li class="sidebar-sub-header"><a href="/c-entrance/basic/number-and-string.html#ちょっと応用" class="sidebar-link">ちょっと応用</a></li><li class="sidebar-sub-header"><a href="/c-entrance/basic/number-and-string.html#復習問題" class="sidebar-link">復習問題</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="数値と文字列"><a href="#数値と文字列" class="header-anchor">#</a> 数値と文字列</h1> <p>ここで数値と文字列のデータについて知ることができます。</p> <p>ここでの内容は今後の理解において<strong>非常に重要</strong>です。</p> <details class="custom-block details"><summary>目次</summary> <p></p><div class="table-of-contents"><ul><li><a href="#文字列とは">文字列とは</a></li><li><a href="#数値とは">数値とは</a></li><li><a href="#数値と文字列の見分け方">数値と文字列の見分け方</a></li><li><a href="#printf-で数値を表示する">printf()で数値を表示する</a></li><li><a href="#ちょっと応用">ちょっと応用</a></li><li><a href="#復習問題">復習問題</a></li></ul></div><p></p></details> <h2 id="文字列とは"><a href="#文字列とは" class="header-anchor">#</a> 文字列とは</h2> <p>数値を知る前に、まず今まで使ってきた文字列とはなにか考えてみましょう。</p> <p>文字列はその名の通り、文字の集合です。</p> <p>文字として存在するのなら殆どの文字を扱うことができます。</p> <p>しかしこれには大きな欠点があります。</p> <p>それは、計算に利用できないということです。</p> <p>計算をするのがコンピュータの仕事なのに計算ができないとなれば本末転倒です。</p> <p>では、計算に利用するにはどのようにすれば良いでしょうか。</p> <p>そこで、数値の登場です。</p> <h2 id="数値とは"><a href="#数値とは" class="header-anchor">#</a> 数値とは</h2> <p>数値とは、数字そのものです。</p> <p>文字列とは違い、計算に利用することができます。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token comment">// 結果は 2 となる。</span>
+</code></pre></div><h2 id="数値と文字列の見分け方"><a href="#数値と文字列の見分け方" class="header-anchor">#</a> 数値と文字列の見分け方</h2> <p>すこし難しそうに思えますが、実はとてもわかりやすい特徴を持っています。</p> <p>C言語では文字列は以下のように<code>&quot;&quot;</code>(ダブルクオーテーション)で囲われた範囲のことを意味します。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token string">&quot;これが文字列です。&quot;</span>
+</code></pre></div><p>ダブルクオーテーションで囲われていれば、その部分が全て文字列と認識されます。</p> <p>ここでprintf()を思い出してみましょう。</p> <p>printf()は以下のように使用しました。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;文字列&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>printf()は文字列を表示する関数ですから、引数として文字列が渡されています。</p> <p>ちなみにこの<code>&quot;&quot;</code>で囲われた範囲のことを文字列リテラルと呼ばれたりするので本などで見かけても驚かないようにしましょう。</p> <p>次に、数値です。</p> <p>数値は文字列の逆で&quot;&quot;で囲われていない部分です。</p> <p>つまり、以下のように見分けることができます。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token number">123456789</span>   <span class="token comment">// これは数値</span>
+<span class="token string">&quot;123456789&quot;</span> <span class="token comment">//これは文字列</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>ちなみに、シングルクォーテーションで囲われているものは単に文字と呼びます。<br>
+一文字でもダブルクォーテーションの中であれば、文字列となり扱いが変わります。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token string">'A'</span> <span class="token comment">// これは文字</span>
+<span class="token string">&quot;A&quot;</span> <span class="token comment">// これは文字列</span>
+</code></pre></div></div> <h2 id="printf-で数値を表示する"><a href="#printf-で数値を表示する" class="header-anchor">#</a> printf()で数値を表示する</h2> <p>先程、printf()では文字列を表示すると説明しましたが、数値を表示することもできます。</p> <p>printf()で数値を表示するには以下のように書きます。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span> <span class="token number">512</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;出力結果
+512
+</code></pre></div><p>なにやら見慣れない書き方ですね。</p> <p>この<code>%d</code>は<strong>変換指定子</strong>と呼びます。また、<strong>出力変換指定子</strong>ともいいます。</p> <p>これはprintf()の<strong>最初の引数内で記述することができ、後に続く引数の数値を10進数の文字列に変換</strong>してくれます。</p> <h2 id="ちょっと応用"><a href="#ちょっと応用" class="header-anchor">#</a> ちょっと応用</h2> <p>printf()を利用して、数値と文字列を同時に表示することができます。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 文字列の中に変換指定子を埋め込む</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;今日の気温は%d度です&quot;</span><span class="token punctuation">,</span> <span class="token number">26</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>今日の気温は26度です
+</code></pre></div><p>また、変換指定子は2つ以上書くこともできます。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 引数を増やしてみる。</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;今日は%d月%d日です。今日の気温は%d度です。&quot;</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">13</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>今日は12月25日です。今日の気温は13度です。
+</code></pre></div><p>計算結果を表示することもできます。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 計算してみる。</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;計算結果: %d&quot;</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>計算結果: 3
+</code></pre></div><h2 id="復習問題"><a href="#復習問題" class="header-anchor">#</a> 復習問題</h2> <div class="custom-block tip"><p class="custom-block-title">問, 1</p> <p>C言語において文字列であることを示すためには何の記号を使用するか</p></div> <details class="custom-block details"><summary>答え</summary> <p>ダブルクォーテーション, &quot;</p></details> <div class="custom-block tip"><p class="custom-block-title">問, 2</p> <p>プログラム内に以下を記述したときの実行結果を答えろ。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <details class="custom-block details"><summary>答え</summary> <div class="language- extra-class"><pre class="language-text"><code>64
+</code></pre></div></details> <div class="custom-block tip"><p class="custom-block-title">問, 3</p> <p>プログラム内に以下を記述したときの実行結果を答えろ。</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span> <span class="token number">32</span> <span class="token operator">+</span> <span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <details class="custom-block details"><summary>答え</summary> <div class="language- extra-class"><pre class="language-text"><code>64
+</code></pre></div></details></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/c-entrance/basic/display.html" class="prev">
+        画面表示
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/c-entrance/assets/js/app.85ba40a9.js" defer></script><script src="/c-entrance/assets/js/2.a0be3db0.js" defer></script><script src="/c-entrance/assets/js/12.3ec1da63.js" defer></script>
+  </body>
+</html>

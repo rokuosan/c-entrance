@@ -33,9 +33,10 @@ module.exports ={
                 'how-to-write',
                 'question'
             ],
-            '/basic/introduction': [
+            '/basic/': [
                 'introduction',
-                'display'
+                'display',
+                'number-and-string'
             ],
             '/questions/':[
                 ''

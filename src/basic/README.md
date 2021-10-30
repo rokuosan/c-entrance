@@ -5,3 +5,4 @@
 ## 目次
 
 - [画面表示をしてみよう](display)
+- [数値と文字列](number-and-string)
