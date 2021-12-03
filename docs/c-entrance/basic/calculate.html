@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基本的な計算 | ざっくりわかるC言語入門</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="C言語の基本を自分なりにまとめてみました">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/c-entrance/assets/css/0.styles.ec229a39.css" as="style"><link rel="preload" href="/c-entrance/assets/js/app.6e4eb02d.js" as="script"><link rel="preload" href="/c-entrance/assets/js/2.7c076895.js" as="script"><link rel="preload" href="/c-entrance/assets/js/10.a04e2701.js" as="script"><link rel="prefetch" href="/c-entrance/assets/js/11.ffabe91e.js"><link rel="prefetch" href="/c-entrance/assets/js/12.de7cd3c6.js"><link rel="prefetch" href="/c-entrance/assets/js/13.5cd82276.js"><link rel="prefetch" href="/c-entrance/assets/js/14.954a88e6.js"><link rel="prefetch" href="/c-entrance/assets/js/15.1da50321.js"><link rel="prefetch" href="/c-entrance/assets/js/16.963a3366.js"><link rel="prefetch" href="/c-entrance/assets/js/17.324cae02.js"><link rel="prefetch" href="/c-entrance/assets/js/18.cb06bae9.js"><link rel="prefetch" href="/c-entrance/assets/js/19.af1a9173.js"><link rel="prefetch" href="/c-entrance/assets/js/20.46cea0cc.js"><link rel="prefetch" href="/c-entrance/assets/js/21.cce9b8fe.js"><link rel="prefetch" href="/c-entrance/assets/js/22.43b690fa.js"><link rel="prefetch" href="/c-entrance/assets/js/23.513f5b8f.js"><link rel="prefetch" href="/c-entrance/assets/js/24.c0381cbf.js"><link rel="prefetch" href="/c-entrance/assets/js/25.c6270c2b.js"><link rel="prefetch" href="/c-entrance/assets/js/26.2c919a88.js"><link rel="prefetch" href="/c-entrance/assets/js/27.9cd73f5a.js"><link rel="prefetch" href="/c-entrance/assets/js/28.36812cdc.js"><link rel="prefetch" href="/c-entrance/assets/js/29.d682c9d1.js"><link rel="prefetch" href="/c-entrance/assets/js/3.56d6df15.js"><link rel="prefetch" href="/c-entrance/assets/js/30.0461bb94.js"><link rel="prefetch" href="/c-entrance/assets/js/4.3d829d05.js"><link rel="prefetch" href="/c-entrance/assets/js/5.4b7571a5.js"><link rel="prefetch" href="/c-entrance/assets/js/6.6e6b000c.js"><link rel="prefetch" href="/c-entrance/assets/js/7.77867965.js"><link rel="prefetch" href="/c-entrance/assets/js/8.2ced925a.js"><link rel="prefetch" href="/c-entrance/assets/js/9.f89fb8bf.js">
+    <link rel="stylesheet" href="/c-entrance/assets/css/0.styles.ec229a39.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/c-entrance/" class="home-link router-link-active"><!----> <span class="site-name">ざっくりわかるC言語入門</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/c-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/c-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="C言語入門" class="dropdown-title"><span class="title">C言語入門</span> <span class="arrow down"></span></button> <button type="button" aria-label="C言語入門" class="mobile-dropdown-title"><span class="title">C言語入門</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/introduction.html" class="nav-link">
+  C言語入門
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/hello-world.html" class="nav-link">
+  HelloWorld
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/characteristic.html" class="nav-link">
+  特性
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/how-to-write.html" class="nav-link">
+  書き方/慣習
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/basic/introduction.html" class="nav-link">
+  C言語基礎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基本構文" class="dropdown-title"><span class="title">基本構文</span> <span class="arrow down"></span></button> <button type="button" aria-label="基本構文" class="mobile-dropdown-title"><span class="title">基本構文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/introduction.html" class="nav-link">
+  基本構文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/variable.html" class="nav-link">
+  変数について
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/if.html" class="nav-link">
+  if 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/for.html" class="nav-link">
+  for 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/while.html" class="nav-link">
+  while 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/switch.html" class="nav-link">
+  switch 文
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/questions/" class="nav-link">
+  問題集
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/c-entrance/" class="nav-link">
+  ホーム
+</a></div><div class="nav-item"><a href="/c-entrance/environment/" class="nav-link">
+  環境構築
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="C言語入門" class="dropdown-title"><span class="title">C言語入門</span> <span class="arrow down"></span></button> <button type="button" aria-label="C言語入門" class="mobile-dropdown-title"><span class="title">C言語入門</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/introduction.html" class="nav-link">
+  C言語入門
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/hello-world.html" class="nav-link">
+  HelloWorld
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/characteristic.html" class="nav-link">
+  特性
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/tutorial/how-to-write.html" class="nav-link">
+  書き方/慣習
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/basic/introduction.html" class="nav-link">
+  C言語基礎
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基本構文" class="dropdown-title"><span class="title">基本構文</span> <span class="arrow down"></span></button> <button type="button" aria-label="基本構文" class="mobile-dropdown-title"><span class="title">基本構文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/introduction.html" class="nav-link">
+  基本構文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/variable.html" class="nav-link">
+  変数について
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/if.html" class="nav-link">
+  if 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/for.html" class="nav-link">
+  for 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/while.html" class="nav-link">
+  while 文
+</a></li><li class="dropdown-item"><!----> <a href="/c-entrance/syntax/switch.html" class="nav-link">
+  switch 文
+</a></li></ul></div></div><div class="nav-item"><a href="/c-entrance/questions/" class="nav-link">
+  問題集
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/c-entrance/basic/introduction.html" class="sidebar-link">C言語基礎</a></li><li><a href="/c-entrance/basic/display.html" class="sidebar-link">画面表示</a></li><li><a href="/c-entrance/basic/number-and-string.html" class="sidebar-link">数値と文字列</a></li><li><a href="/c-entrance/basic/calculate.html" aria-current="page" class="active sidebar-link">基本的な計算</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/c-entrance/basic/calculate.html#計算結果の表示" class="sidebar-link">計算結果の表示</a></li><li class="sidebar-sub-header"><a href="/c-entrance/basic/calculate.html#四則演算をする" class="sidebar-link">四則演算をする</a></li><li class="sidebar-sub-header"><a href="/c-entrance/basic/calculate.html#実践してみよう" class="sidebar-link">実践してみよう</a></li><li class="sidebar-sub-header"><a href="/c-entrance/basic/calculate.html#計算式の優先度" class="sidebar-link">計算式の優先度</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="基本的な計算"><a href="#基本的な計算" class="header-anchor">#</a> 基本的な計算</h1> <p>ここでは、数値を使って計算をする方法をざっくり解説します。</p> <details class="custom-block details"><summary>目次</summary> <p></p><div class="table-of-contents"><ul><li><a href="#計算結果の表示">計算結果の表示</a></li><li><a href="#四則演算をする">四則演算をする</a></li><li><a href="#実践してみよう">実践してみよう</a></li><li><a href="#計算式の優先度">計算式の優先度</a></li></ul></div><p></p></details> <h2 id="計算結果の表示"><a href="#計算結果の表示" class="header-anchor">#</a> 計算結果の表示</h2> <p>数値を計算させただけでは、プログラムは何も表示してくれません。</p> <p>そこで、前節で解説した <strong>printf()</strong> を使って結果を表示してみましょう。</p> <p>printf()を利用して数値を表示するには以下のように書きます。</p> <p>[ calc.c ]</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 文字列を表示する</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="四則演算をする"><a href="#四則演算をする" class="header-anchor">#</a> 四則演算をする</h2> <p>数値を表示する方法はこれで完璧です。</p> <p>では次に四則演算を行ってみましょう。</p> <p>それぞれに使用する記号は以下の通りです。</p> <table><thead><tr><th style="text-align:center;">記号</th> <th style="text-align:center;">説明</th> <th style="text-align:center;">例</th> <th style="text-align:center;">結果</th></tr></thead> <tbody><tr><td style="text-align:center;">+</td> <td style="text-align:center;">足し算をする</td> <td style="text-align:center;">2+3</td> <td style="text-align:center;">5</td></tr> <tr><td style="text-align:center;">-</td> <td style="text-align:center;">引き算をする</td> <td style="text-align:center;">5-3</td> <td style="text-align:center;">2</td></tr> <tr><td style="text-align:center;">*</td> <td style="text-align:center;">掛け算をする</td> <td style="text-align:center;">2*5</td> <td style="text-align:center;">10</td></tr> <tr><td style="text-align:center;">\</td> <td style="text-align:center;">割り算をする</td> <td style="text-align:center;">6/2</td> <td style="text-align:center;">3</td></tr> <tr><td style="text-align:center;">%</td> <td style="text-align:center;">剰余演算する(余りを取得)</td> <td style="text-align:center;">7%2</td> <td style="text-align:center;">1</td></tr></tbody></table> <p>足し算と引き算は普段使用するような記号と同じです。</p> <p>しかし、<strong>掛け算と割り算は少し違います</strong>ね。</p> <p>普段コンピュータで数値を計算している人なら見慣れた表記かもしれませんが、慣れていない人はこの機会に覚えておきましょう。</p> <p>また、剰余演算なんて聞き慣れない用語も出てきました。</p> <p>なんだか難しそうな用語ですが、内容は割った余りを出すための演算子です。</p> <p>いつ使うの？とか言われそうですが、例を上げると<a href="https://wa3.i-3-i.info/word1605.html" target="_blank" rel="noopener noreferrer">2進数<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>に変換するときに使ったりします。</p> <h2 id="実践してみよう"><a href="#実践してみよう" class="header-anchor">#</a> 実践してみよう</h2> <p>四則演算をする方法を知ったところで、一つプログラムを作ってみましょう。</p> <p>今回作成するプログラムは二つの数値を元に四則演算をすべて行います。</p> <p>ファイル名は適当に calc.c とでもしておきましょう。</p> <p>[ calc.c ]</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 足し算をする</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;足し算: %d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token operator">+</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 引き算をする</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;引き算: %d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 掛け算をする</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;掛け算: %d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token operator">*</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 割り算をする</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;割り算: %d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token operator">/</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 剰余演算する</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;剰余演算: %d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token operator">%</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>これをコンパイルして実行するとこのようになると思います。</p> <p>[ 結果 ]</p> <div class="language- extra-class"><pre class="language-text"><code>足し算: 9
+引き算: 3
+掛け算: 18
+割り算: 2
+剰余演算: 0
+</code></pre></div><p>うまく計算出来たことがわかります。</p> <p>では次に、他の値でも試してみましょう。</p> <p>[ calc2.c ]</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 割り算をする</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;割り算: %d\n&quot;</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token operator">/</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>コンパイルして実行してみると...</p> <p>[ 実行結果 ]</p> <div class="language- extra-class"><pre class="language-text"><code>割り算: 1
+</code></pre></div><p>おや？<strong>数値が変ですね。電卓ならば、1.5と表示されるはず</strong>です。</p> <p>電卓に慣れている身だと変に思いますが、この<strong>プログラムにおいてはこの計算結果は正しい数値</strong>です。</p> <p>ここではどの数値も整数として計算しているため、結果も整数が求められるため<strong>小数点となる1.5という値は切り捨てられます</strong>。</p> <div class="custom-block tip"><p class="custom-block-title">なぜ切り捨てなのか</p> <p>ここで仮に四捨五入を行ってしまうと、商*割る数をしたときに本来の割られる数の値を超えてしまうからです。</p> <p>例えば、6/4の商を切り上げで2にした場合、4*2=8となってしまいます。
+少数を扱える場合であれば1.5で表現できますが、整数のみ扱える状態では切り捨ての1になります。</p></div> <h2 id="計算式の優先度"><a href="#計算式の優先度" class="header-anchor">#</a> 計算式の優先度</h2> <p>C言語ではもっと複雑な計算をすることもできます。</p> <p>この時問題になるのは<strong>計算の順序ですが、数学と同じ</strong>です。</p> <p>1+3x5 という式で1+3を優先したいときは数学と同じく()を使用します。</p> <p>ですが、()が入れ子になる場合も出てきます。</p> <p>この場合は数学と異なり、いくら入れ子になっていても<strong>常に括弧は()のみ</strong>です。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/c-entrance/basic/number-and-string.html" class="prev">
+        数値と文字列
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/c-entrance/assets/js/app.6e4eb02d.js" defer></script><script src="/c-entrance/assets/js/2.7c076895.js" defer></script><script src="/c-entrance/assets/js/10.a04e2701.js" defer></script>
+  </body>
+</html>
