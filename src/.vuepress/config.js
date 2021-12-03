@@ -36,7 +36,8 @@ module.exports ={
             '/basic/': [
                 'introduction',
                 'display',
-                'number-and-string'
+                'number-and-string',
+                'calculate'
             ],
             '/questions/':[
                 ''

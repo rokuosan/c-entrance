@@ -6,3 +6,4 @@
 
 - [画面表示をしてみよう](display)
 - [数値と文字列](number-and-string)
+- [基本的な計算](calculate)
