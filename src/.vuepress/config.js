@@ -9,13 +9,30 @@ module.exports ={
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
         ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
     ],
+    locales: {
+        '/': {
+            lang: 'ja'
+        }
+    },
     themeConfig: {
         nav: [
             { text: 'ホーム', link: '/' },
             { text: '環境構築', link: '/environment/'},
-            { text: 'C言語入門', items: [{ text: 'C言語入門', link: '/tutorial/introduction' },{ text: 'HelloWorld', link: '/tutorial/hello-world' }, { text: '特性', link: '/tutorial/characteristic' }, { text: '書き方/慣習', link: '/tutorial/how-to-write' }]},
+            { text: 'C言語入門', items: [
+                { text: 'C言語入門', link: '/tutorial/introduction' },
+                { text: 'HelloWorld', link: '/tutorial/hello-world' },
+                { text: '特性', link: '/tutorial/characteristic' },
+                { text: '書き方/慣習', link: '/tutorial/how-to-write' }
+            ]},
             { text: 'C言語基礎', link: '/basic/introduction' },
-            { text: '基本構文', items: [{ text: '基本構文', link: '/syntax/introduction' },{ text: '変数について', link: '/syntax/variable' }, { text: 'if 文', link: '/syntax/if' }, { text: 'for 文', link: '/syntax/for' }, { text: 'while 文', link: '/syntax/while' }, { text: 'switch 文', link: '/syntax/switch' }]},
+            { text: '基本構文', items: [
+                { text: '基本構文', link: '/syntax/introduction' },
+                { text: '変数について', link: '/syntax/variable' }, 
+                { text: 'if 文', link: '/syntax/if' },
+                { text: 'for 文', link: '/syntax/for' },
+                { text: 'while 文', link: '/syntax/while' },
+                { text: 'switch 文', link: '/syntax/switch' }
+            ]},
             { text: '問題集', link: '/questions/' },
         ],
         sidebarDepth: 2,
@@ -37,7 +54,8 @@ module.exports ={
                 'introduction',
                 'display',
                 'number-and-string',
-                'calculate'
+                'calculate',
+                'variable'
             ],
             '/questions/':[
                 ''
